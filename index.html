@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es-CL">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Observatorio de Polarización · Confluencia Científica</title><link rel="stylesheet" href="./estilos.css"><script type="module" src="./app.mjs"></script></head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<header><div class="wrap nav"><a class="brand" href="#contenido"><span aria-hidden="true">◉</span> Confluencia Científica</a><nav aria-label="Principal"><a href="#indicadores">Indicadores</a><a href="#metodologia">Metodología</a></nav></div></header>
+<main id="contenido">
+<section class="hero"><div class="wrap hero-inner"><div><p class="eyebrow">CHILE / ELSOC 2016–2023</p><h1>Observatorio de<br>Polarización</h1><p class="intro">Explora cómo las personas se ubican en la escala izquierda–derecha y cuánto coinciden las opiniones políticas en sus redes de confianza.</p><a class="cta" href="#indicadores">Explorar indicadores ↓</a></div><div class="orbit" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div></section>
+<div class="wrap content">
+<section id="indicadores" aria-labelledby="tit-indicadores"><div class="section-head"><div><p class="eyebrow">DATOS DEL ESTUDIO</p><h2 id="tit-indicadores">Opiniones y redes</h2></div><span class="status" id="estado-datos">Resultados provisionales</span></div>
+<div class="load"><label for="archivo">Cargar datos de la vista local</label><input id="archivo" type="file" accept=".json,application/json" aria-describedby="mensaje"><p id="mensaje" role="status">Selecciona observatorio.local.json o demostracion.local.json para ver los indicadores.</p></div>
+<div id="tablero" hidden>
+<div class="legend"><span>Sin medición: la ola carece de una medición comparable.</span><span>Datos insuficientes: la estimación no está disponible.</span></div>
+<div class="grid">
+<article class="panel"><h3>Extremidad ideológica</h3><p>Distancia promedio al centro de la escala, de 0 a 1.</p><div id="extremidad"></div><p class="note">Intervalos de confianza definitivos pendientes de validación del diseño.</p></article>
+<article class="panel"><h3>Distribución de autoubicación</h3><p>Porcentajes ponderados entre quienes eligieron una posición.</p><label for="ola">Ola</label> <select id="ola"></select><div id="distribucion" aria-live="polite"></div></article>
+<article class="panel"><h3>Concordancia de confidentes</h3><p>Coincidencia entre confidentes. Requiere al menos dos confidentes válidos.</p><div id="concordancia"></div></article>
+<article class="panel"><h3>Afinidad con confidentes</h3><p>Coincidencia entre la persona entrevistada y sus confidentes. Requiere al menos uno válido y una posición propia.</p><div id="afinidad"></div></article>
+</div></div></section>
+<section id="metodologia" class="method"><p class="eyebrow">FUENTES Y LÍMITES</p><h2>Cómo leer los resultados</h2><p>ELSOC es el Estudio Longitudinal Social de Chile del COES. Aquí se muestran estimaciones transversales ponderadas de cada ola. Cada indicador tiene su propio grupo de respuestas válidas.</p><details open><summary>Cómo se calculan los indicadores</summary><p>La extremidad es la distancia absoluta entre la respuesta y el centro (5), dividida por 5. Se promedia entre respuestas válidas de 0 a 10. En las redes se armonizan las posiciones en categorías ideológicas comparables. La concordancia promedia la fracción de pares de confidentes en la misma categoría. La afinidad promedia la fracción de confidentes en la categoría de la persona entrevistada.</p></details><details><summary>Alcance, incertidumbre y privacidad</summary><p>Estas cifras describen diferencias entre olas y asociaciones. La ola 2019 se levantó después de octubre de ese año. Los datos presentados no permiten atribuir cambios al estallido social ni seguir cambios individuales. Una posición cercana a los extremos de la escala expresa autoubicación ideológica.</p><p>Los cruces demográficos siguen pendientes de revisión de divulgación. La vista local utiliza los totales por ola. La publicación requiere aprobación de la versión exacta y su licencia.</p></details><p id="fecha"></p><p><a href="https://manual-metodologico-elsoc.netlify.app/">Manual metodológico de ELSOC</a> · <a href="https://manual-metodologico-elsoc.netlify.app/dis_ponderadores.html">Ponderadores</a></p></section>
+</div></main><footer><div class="wrap">Confluencia Científica · Observatorio de Polarización</div></footer></body></html>
+

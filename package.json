@@ -1,0 +1,1 @@
+{"name":"observatorio-confluencia","private":true,"type":"module","scripts":{"dev":"node servir.mjs","build":"node preparar.mjs --build","lint":"node --check app.mjs && node --check datos.mjs && node --check preparar.mjs && node --check servir.mjs","test":"node --test datos.test.mjs"}}
