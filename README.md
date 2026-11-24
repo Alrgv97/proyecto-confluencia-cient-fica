@@ -14,9 +14,7 @@ npm run dev
 ```
 
 Si PowerShell bloquea el script de npm, escribe `npm.cmd` en lugar de `npm`. Abre http://127.0.0.1:4173 y selecciona `demostracion.local.json`. Verás los cuatro gráficos y el selector de ola con cifras ficticias identificadas en la interfaz.
-
-Si tu grupo está autorizado para utilizar el agregado provisional, puedes compartir `observatorio.local.json` por un canal privado autorizado. Cada integrante puede elegir ese archivo en la misma pantalla y ver las cifras de la prueba original.
-
+deben usar `observatorio.local.json` que les comparto por un canal privado
 ## Preparación de datos ELSOC para la vista local
 
 Desde PowerShell con Node.js 24:
